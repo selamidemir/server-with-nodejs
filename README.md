@@ -3,6 +3,14 @@ A simple server was created with Node JS.
 
 Node Js kullanılarak hazırlandı. Anasayfa, hakkında ve iletişim sayfaları bulunmakta.
 
+```
+const server = http.createServer(...);
+```
+
+Şeklinde sunucuyu oluşturuyoruz. Sunucuya req ve res olmak üzere 2 parametre geçiyor. Burada gelen urlyi **req.url** üzerinden alıyoruz. Sayfa header bilgisini **res.writeHead** metodu ile giriyoruz. 
+
+Sonrasında url denetlenerek hangi sayfaya gidileceğine karar veriliyor. Gelen urlye göre anasayfa, iletişim ve hakkımızda sayfaları ekrana basılıyor. Eğer girilen urlnin sunucuda bir karşılığı yoksa ise, 404 kodu ile sayfa bulunamadı hatası veriliyor.
+
 Sayfa tasarımı için template string kullanıldı.
 
 ```
@@ -44,3 +52,5 @@ createPage("Başlık içeriği","Sayfa içeriği");
 ```
 
 şeklinde bir kullanım yeterli olacaktır.
+
+
