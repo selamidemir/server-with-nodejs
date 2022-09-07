@@ -9,9 +9,22 @@ function createPage(title, content) {
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <style>
+            body {
+                text-align: center;
+                background-color: lightblue;
+                font-size: 19px;
+            }
+            a {
+                font-weight: 900;
+            }
+            a:hover {
+                text-decaration: none;
+            }
+        </style>
         <title>${title}</title>
     </head>
-    <body style='text-align:center'>
+    <body style='text-align:center,'>
         <h1>${title}</h1>
         ${content}
 

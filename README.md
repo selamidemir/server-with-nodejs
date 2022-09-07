@@ -3,6 +3,8 @@ A simple server was created with Node JS.
 
 Node Js kullanılarak hazırlandı. Anasayfa, hakkında ve iletişim sayfaları bulunmakta.
 
+![Node Js İle Sunucu Oluşturma](node-js-sunucu-01.gif "Node JS İle Sunucu Oluşturma")
+
 ```
 const server = http.createServer(...);
 ```
@@ -24,7 +26,7 @@ function createPage(title, content) {
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>${title}</title>
     </head>
-    <body style='text-align:center'>
+    <body style='text-align:center, background-color:'>
         <h1>${title}</h1>
         ${content}
 
